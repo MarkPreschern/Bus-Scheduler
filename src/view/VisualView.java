@@ -47,13 +47,13 @@ public class VisualView extends JPanel implements ActionListener {
     this.animate.addActionListener(this);
     this.animate.setText("Animate");
     this.animate.setAlignmentY(Component.CENTER_ALIGNMENT);
-    this.add(this.animate, BorderLayout.SOUTH);
+    this.add(this.animate);
 
     this.back = new JButton();
     this.back.addActionListener(this);
     this.back.setText("Go Back");
     this.back.setAlignmentY(Component.CENTER_ALIGNMENT);
-    this.add(this.back, BorderLayout.SOUTH);
+    this.add(this.back);
   }
 
   @Override
@@ -144,10 +144,13 @@ public class VisualView extends JPanel implements ActionListener {
    * Closes the view and goes back to the start screen.
    */
   private void close() {
+    this.frame.setVisible(false);
     this.frame.remove(this);
+    this.frame.setTitle(null);
     this.frame.add(this.controller);
     this.frame.revalidate();
     this.frame.pack();
     this.frame.setLocationRelativeTo(null);
+    this.frame.setVisible(true);
   }
 }

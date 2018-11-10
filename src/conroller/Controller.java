@@ -68,11 +68,11 @@ public class Controller extends JPanel implements ActionListener {
 
     this.frame = new JFrame();
     this.frame.add(this);
-    this.frame.setVisible(true);
     this.frame.setResizable(false);
     this.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     this.frame.pack();
     this.frame.setLocationRelativeTo(null);
+    this.frame.setVisible(true);
   }
 
   @Override
@@ -85,11 +85,14 @@ public class Controller extends JPanel implements ActionListener {
     Object button = e.getSource();
 
     if (button == this.visual) {
+      this.frame.setVisible(false);
       this.frame.remove(this);
       this.frame.setSize(this.viewLength + 5, this.viewLength + 30);
+      this.frame.setTitle("Bus Scheduler");
       this.frame.add(new VisualView(this.model, this.frame, this));
       this.frame.revalidate();
       this.frame.setLocationRelativeTo(null);
+      this.frame.setVisible(true);
     } else if (button == this.text) {
       try {
         new TextView(this.model);
