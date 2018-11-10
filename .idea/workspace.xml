@@ -95,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/src/conroller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
             </state>
           </provider>
         </entry>
@@ -289,15 +289,16 @@
       <workItem from="1541858970818" duration="331000" />
       <workItem from="1541859307749" duration="129000" />
       <workItem from="1541859439618" duration="322000" />
-      <workItem from="1541860097113" duration="44000" />
+      <workItem from="1541860097113" duration="657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20047000" />
+    <option name="totallyTimeSpent" value="20660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="802" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31473532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -393,7 +394,7 @@
     <entry file="file://$PROJECT_DIR$/src/conroller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
         </state>
       </provider>
     </entry>
